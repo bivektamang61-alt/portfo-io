@@ -139,7 +139,7 @@ function sendConsultationEmail(name, email, phone, subject, message) {
     
     // Example EmailJS implementation (uncomment and configure):
     /*
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailData)
+    emailjs.send('service_5dj2ahg', 'template_szpt3pl', emailData)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
@@ -362,4 +362,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
