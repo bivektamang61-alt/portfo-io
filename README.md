@@ -1,205 +1,138 @@
-# Darkness to Light Tuition Academy Website
+# Darkness to Light Tuition Academy
 
-A modern, responsive educational website with a beautiful dark theme and interactive features. This website showcases the services and achievements of the Darkness to Light Tuition Academy.
+A modern, responsive website for the Darkness to Light Tuition Academy, featuring personalized tutoring services and free educational resources.
 
-## 🌟 Features
+## Features
 
-### Design & Layout
-- **Modern Dark Theme**: Sleek dark design with purple gradients and accents
-- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
-- **Smooth Animations**: CSS animations and JavaScript interactions
-- **Professional Typography**: Clean, readable fonts using Inter font family
+- **Responsive Design**: Works perfectly on all devices
+- **Modern UI**: Dark theme with gradient accents
+- **Contact Form**: Email integration for consultation bookings
+- **Free Resources Section**: Access to study materials and tutorials
+- **Student Success Stories**: Real testimonials from students
+- **Interactive Elements**: Smooth animations and hover effects
 
-### Sections Included
-1. **Hero Section**: Landing page with call-to-action buttons and statistics
-2. **About Us**: Mission, approach, and key features
-3. **Results**: Student achievements and testimonials
-4. **Services**: Academic subjects and tutoring services
-5. **Process**: 5-step methodology for student success
-6. **FAQ**: Frequently asked questions with accordion functionality
-7. **Contact**: Contact form and information
-8. **Footer**: Links and social media connections
+## Recent Updates
 
-### Interactive Features
-- **Mobile Navigation**: Hamburger menu for mobile devices
-- **Smooth Scrolling**: Navigation links smoothly scroll to sections
-- **FAQ Accordion**: Expandable FAQ items
-- **Contact Form**: Functional form with validation
-- **Scroll Animations**: Elements animate as they come into view
-- **Counter Animations**: Statistics count up when visible
-- **Progress Bar**: Shows scroll progress at the top
-- **Notifications**: Success/error messages for form submissions
+- ✅ Changed contact address to "Birtamode 3"
+- ✅ Updated student names to "Shristi" and "Denisha"
+- ✅ Replaced "Scholarship Success" and "University Admissions" with "Parents Satisfaction"
+- ✅ Added "Student Success Stories" section
+- ✅ Added "Free Resources" section with downloadable materials
+- ✅ Integrated email functionality for consultation bookings
 
-## 🚀 Getting Started
+## Setup Instructions
 
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No server required - runs entirely in the browser
+### 1. EmailJS Configuration
 
-### Installation
-1. Download or clone the project files
-2. Open `index.html` in your web browser
-3. The website will load with all features working
+To enable email notifications when someone books a consultation:
 
-### File Structure
+1. **Sign up for EmailJS**:
+   - Go to [emailjs.com](https://www.emailjs.com/)
+   - Create a free account
+
+2. **Create an Email Service**:
+   - Go to Email Services in your dashboard
+   - Add a new service (Gmail, Outlook, etc.)
+   - Connect your email account
+
+3. **Create an Email Template**:
+   - Go to Email Templates
+   - Create a new template with the following variables:
+     - `{{from_name}}` - Customer's name
+     - `{{from_email}}` - Customer's email
+     - `{{phone}}` - Customer's phone number
+     - `{{subject}}` - Selected subject
+     - `{{message}}` - Customer's message
+     - `{{consultation_date}}` - Date of request
+     - `{{consultation_time}}` - Time of request
+
+4. **Update the Website**:
+   - Replace `YOUR_USER_ID` in `index.html` with your EmailJS User ID
+   - Replace `YOUR_SERVICE_ID` and `YOUR_TEMPLATE_ID` in `script.js` with your actual IDs
+
+### 2. GitHub Deployment
+
+To publish your website online:
+
+1. **Create a GitHub Repository**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
+
+2. **Push to GitHub**:
+   ```bash
+   git remote add origin https://github.com/yourusername/your-repo-name.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. **Enable GitHub Pages**:
+   - Go to your repository on GitHub
+   - Click Settings → Pages
+   - Select "Deploy from a branch"
+   - Choose "main" branch and "/ (root)" folder
+   - Click Save
+
+4. **Your website will be available at**:
+   `https://yourusername.github.io/your-repo-name`
+
+## File Structure
+
 ```
 Darkness-to-Light-Tuition-Academy/
 ├── index.html          # Main HTML file
-├── styles.css          # CSS styles and animations
+├── styles.css          # CSS styles
 ├── script.js           # JavaScript functionality
 └── README.md           # This file
 ```
 
-## 🎨 Customization
+## Customization
 
-### Colors
-The website uses CSS custom properties (variables) for easy color customization. Edit the `:root` section in `styles.css`:
-
+### Changing Colors
+Edit the CSS variables in `styles.css`:
 ```css
 :root {
-    --primary-color: #6366f1;      /* Main purple color */
-    --secondary-color: #8b5cf6;    /* Secondary purple */
-    --accent-color: #06b6d4;       /* Cyan accent */
-    --dark-bg: #0f0f23;           /* Background color */
-    --dark-surface: #1a1a2e;      /* Surface color */
-    --dark-card: #16213e;         /* Card background */
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --accent-color: #06b6d4;
     /* ... other variables */
 }
 ```
 
-### Content
-- **Text Content**: Edit the HTML file to change all text content
-- **Images**: Replace placeholder elements with actual images
-- **Contact Information**: Update phone, email, and address in the contact section
-- **Social Media**: Update social media links in the footer
+### Adding Content
+- **Services**: Edit the services section in `index.html`
+- **Resources**: Add new resource cards in the resources section
+- **Testimonials**: Update student testimonials in the results section
 
-### Adding New Sections
-1. Add the HTML structure in `index.html`
-2. Add corresponding CSS styles in `styles.css`
-3. Add any JavaScript functionality in `script.js`
+### Contact Information
+Update contact details in the contact section:
+- Phone: `9709178678`
+- Email: `bivektamang@61gmail.com`
+- Address: `Birtamode 3`
 
-## 📱 Responsive Design
+## Browser Support
 
-The website is fully responsive and includes:
-- **Desktop**: Full layout with side-by-side content
-- **Tablet**: Adjusted grid layouts and spacing
-- **Mobile**: Single-column layout with mobile navigation
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-### Breakpoints
-- **Mobile**: Up to 768px
-- **Tablet**: 768px to 1024px
-- **Desktop**: 1024px and above
+## Performance
 
-## 🔧 Technical Details
-
-### Technologies Used
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with Grid, Flexbox, and custom properties
-- **JavaScript (ES6+)**: Interactive functionality
-- **Font Awesome**: Icons
-- **Google Fonts**: Inter font family
-
-### Browser Support
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-### Performance Features
-- Optimized CSS with efficient selectors
-- Minimal JavaScript for fast loading
-- Responsive images and lazy loading ready
-- Smooth animations using CSS transforms
-
-## 📝 Content Management
-
-### Updating Statistics
-Edit the numbers in the hero section and results section:
-
-```html
-<div class="stat">
-    <h3>500+</h3>  <!-- Change this number -->
-    <p>Students Transformed</p>
-</div>
-```
-
-### Adding Testimonials
-Add new testimonials in the results section:
-
-```html
-<div class="testimonial">
-    <div class="testimonial-content">
-        <p>"Your testimonial text here"</p>
-        <div class="testimonial-author">
-            <h4>Student Name</h4>
-            <span>Grade/Level</span>
-        </div>
-    </div>
-</div>
-```
-
-### Modifying Services
-Update the services section with your specific offerings:
-
-```html
-<div class="service-card">
-    <div class="service-icon">
-        <i class="fas fa-icon-name"></i>
-    </div>
-    <h3>Service Name</h3>
-    <p>Service description</p>
-    <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-    </ul>
-</div>
-```
-
-## 🎯 SEO Optimization
-
-The website includes:
-- Semantic HTML structure
-- Meta tags for social sharing
-- Proper heading hierarchy
-- Alt text ready for images
+- Optimized images and assets
+- Minified CSS and JavaScript
 - Fast loading times
+- Mobile-first responsive design
 
-## 🔒 Security Considerations
+## Support
 
-- Form validation on both client and server side
-- XSS protection through proper input sanitization
-- HTTPS ready for production deployment
+For technical support or questions about the website, please contact:
+- Email: bivektamang@61gmail.com
+- Phone: 9709178678
 
-## 🚀 Deployment
+## License
 
-### Local Development
-Simply open `index.html` in a web browser for local viewing.
-
-### Web Hosting
-Upload all files to your web hosting provider:
-1. Upload `index.html`, `styles.css`, and `script.js`
-2. Ensure all files are in the same directory
-3. Access via your domain name
-
-### Recommended Hosting
-- **Netlify**: Drag and drop deployment
-- **Vercel**: Git-based deployment
-- **GitHub Pages**: Free hosting for public repositories
-- **Traditional hosting**: Any web hosting service
-
-## 📞 Support
-
-For questions or customization help:
-- Check the code comments for guidance
-- Review the CSS variables for easy customization
-- Test on different devices and browsers
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-**Darkness to Light Tuition Academy** - Transforming academic challenges into opportunities for success.
+This project is created for Darkness to Light Tuition Academy. All rights reserved.
 
